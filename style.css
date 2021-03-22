@@ -21,13 +21,15 @@ h3 {
     color: white;
 }
 
-img {
-    width: 100%;
+.btn-danger {
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 
 .showcase {
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     position: relative;
     background-image: url(Images/netflix_background.jpg);
 }
@@ -35,9 +37,71 @@ img {
 .showcase-top {
     position: relative;
     height: 90px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 2;
 }
 
-.showcase-top img {
-    height: 70px;
-    width: 190px;
+.showcase-top-logo img {
+    height: 50px;
+    width: 170px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.showcase-top-button {
+    float: right;
+    position: relative;
+    top: 20%;
+    right: 10px;
+}
+
+.showcase-content {
+    position: absolute;
+    top: 35%;
+    color: white;
+    width: 60%;
+    text-align: center;
+    left: 20%;
+    z-index: 2;
+}
+
+.showcase-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.showcase::after {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+.showcase-content-email {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.showcase-content-email input {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    float: left;
+}
+
+.showcase-content-email a {
+    height: 100%;
+    width: 20%;
+    text-align: center;
 }
